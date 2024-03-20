@@ -7,7 +7,6 @@ public:
         int x=interval[0][0], y=interval[0][1];
         for(int i=1;i<n;i++){
             if(interval[i][0]<=y){
-                x=min(x,interval[i][0]);
                 y=max(y,interval[i][1]);
             }
             else{
